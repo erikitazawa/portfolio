@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.br-sp{
+    display: none;
+}
+
+
+.bg{
+    background-image: url(../img/portfolio_pink.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 850px;  
+    position: relative;
+}
+
+    
+
+.main-copy{
+    color: #f4f0ec;
+    font-size: 5.5rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    transform: translateY(150px);
+    padding-bottom: 10px;
+}
+
+.design-list{
+    display: flex;
+    justify-content: center;
+    transform:translate(0,150px);
+}
+
+.design-item{
+    list-style: none;
+    border: 1px #f4f0ec solid;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+    color: #f4f0ec;
+}
+
+.design-item a{
+    text-decoration: none;
+    color: #f4f0ec;
+}
+
+.design-item a:hover{
+   color: #db438f;
+}
+
+
+.skills-wrapper{
+    background-color: #f4f0ec;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;   
+}
+
+.my-skills{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 150px 0 50px;
+}
+
+.section-title{
+    font-size: 2.3rem;
+    padding: 40px 0 40px 70px;  
+}
+
+.skills-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+
+.skills-img-web{
+    display: flex;
+    justify-content: center;
+    padding-top:10px;
+}
+
+.skills-item{
+    list-style: none;
+    border: 1px solid #353636;
+    border-radius: 15px;
+    width: 30%;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    margin: 10px;
+    text-align: center;   
+}
+
+.skills-img img{
+    width: 120px;
+}
+
+.skills-name{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.skills-name2{
+    font-size: 1.2rem;
+    padding: 10px 0 20px 0;
+}
+
+.skills-text{
+    font-size: 0.9rem;
+    width: 80%;
+    text-align: left;
+    display: inline-block;
+    line-height: 1.5rem;
+}
+
+.pc-skills{
+    list-style: square;
+    list-style-position: outside;
+    width: 100%;
+}
+
+.skills-item:nth-child(10){
+    display: none;
+}
+
+.loader-bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.loader img{
+    width: 100px;
+}
+
+/*1024px以下はこうなる*/
+@media screen and (max-width:1024px){
+
+
+    .section-title{
+        font-size: 2.3rem;
+        padding: 40px 0 20px 40px;  
+    }
+
+    .skills-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:0;
+    }
+    
+    .skills-img-web{
+        display: flex;
+        justify-content: center;
+        padding-top:10px;
+    }
+    
+    .skills-item{
+        list-style: none;
+        border: 1px solid #353636;
+        border-radius: 15px;
+        width: 45%;
+        padding-top: 25px; 
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .skills-item:nth-child(10){
+        display: block;
+        opacity: 0;
+    }
+    
+    .skills-img img{
+        width: 120px;
+    }
+
+}
+
+/*768px以下はこうなる*/
+@media screen and (max-width:768px){
+
+
+.br-sp{
+    display: block;
+}
+
+.bg{
+        background-image: url(../img/portfolio_pink.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;  
+        position: relative;
+    }
+
+    
+    .main-copy{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .design-list{
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top:30px; 
+    }
+
+    .design-item{
+        width: 40%;
+        font-size: 0.9rem;
+        padding-top: 3px;
+        padding-bottom:3px;
+        text-align: center;
+        margin: 5px auto;
+    }
+    
+    .skills-wrapper{
+        background-color: #f4f0ec;
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 20px;   
+    }
+
+    
+    .section-title{
+        font-size: 1.5rem;
+        padding: 40px 0 20px 20px;  
+    }
+
+.skills-list{
+    flex-direction: column;
+    margin: 0;
+}
+
+.skills-name{
+    font-size: 1.2rem;
+}
+
+.skills-text{
+    padding: 0;
+    font-size: 0.9rem;
+    width: 95%;
+}
+
+.skills-item{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.skills-item:nth-child(10){
+    display: none;
+}
+.pc-skills{
+    list-style: square;
+    list-style-position: inside;
+    width: 100%;
+}
+
+.skills-img img{
+    width: 25%;
+}
+
+.loading-bg{
+  height: calc( var(--vh) * 100 );
+}
+
+.loader img{
+    width: 70px;
+}
+
+
+}
+

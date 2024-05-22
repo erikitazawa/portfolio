@@ -1,0 +1,499 @@
+
+/*main*/
+
+.wrapper{
+    background-color: #353636;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.page-title{
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #f4f0ec;
+    font-size: 2rem;
+}
+
+/*about*/
+.about-wrapper{
+    background-color: #f4f0ec;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about{
+    width: 120%;  
+}
+
+.about p{
+    text-align: center;
+}
+
+.me-name{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.erik{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.about p{
+    text-align: left;
+}
+
+.me-text-jp{
+    font-size: 0.9rem;
+    padding-top: 20px;
+    line-height: 1.8rem;
+}
+
+.me-text-en{
+    font-size: 0.8rem;
+}
+
+.me-img img{
+    width: 80%;
+    padding-left :50px;
+}
+
+.me-img{
+    padding-top :20px;
+}
+
+/*skills*/
+
+
+.my-skills{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 150px 0 50px;
+}
+
+.skills-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+
+.skills-img-web{
+    display: flex;
+    justify-content: center;
+    padding-top:10px;
+}
+
+.skills-item{
+    list-style: none;
+    border: 1px solid #353636;
+    border-radius: 15px;
+    width: 30%;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    text-align: center;   
+}
+
+.skills-img img{
+    width: 120px;
+}
+
+.skills-name{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.skills-name2{
+    font-size: 1.2rem;
+    padding: 10px 0 20px 0;
+}
+
+.skills-text{
+    font-size: 0.9rem;
+    width: 80%;
+    text-align: left;
+    display: inline-block;
+    line-height: 1.5rem;
+}
+
+.pc-skills{
+    list-style: square;
+    list-style-position: outside;
+    width: 100%;
+}
+
+.skills-item:nth-child(10){
+    display: none;
+}
+
+/*concept*/
+
+.my-concept{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 150px 0 50px;
+    
+}
+
+.concept-inner{
+    margin: 20px 0
+}
+
+.concept-title{
+    text-align: left;
+    width: 335px;
+    font-size: 1.1rem;
+}
+
+.concept-title::after{
+    content: "";
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+.concept-title2{
+    text-align: left; 
+    width:3 25px;
+    font-size: 1.1rem;
+}
+
+.concept-title2::after{
+    content: "";
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+.concept-text{
+    font-size: 1rem;
+}
+
+.concept-wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.concept-inner{
+    padding-bottom: 20px;
+}
+
+.interest-text img{
+    width:95%;
+}
+
+/*interest*/
+
+.my-interest{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 150px 0 50px;
+    
+}
+
+.interest-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.interest-item{
+    list-style: none;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.interest-wrapper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.interest-title{
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.concept-jp,.skill-jp,.interest-jp{
+    position: static;
+    display: inline;
+    background-color: #f4f0ec;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.interest-img{
+    padding: 20px 0;
+    text-align: center;
+    
+}
+.interest-img img{
+    width:70%;
+    border-radius: 20px;
+}
+
+.interest-text-jp{
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 1.5rem;
+}
+
+.interest-text-en{
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+
+
+/*1024px以下はこうなる*/
+@media screen and (max-width:1024px){
+
+.page-title{
+    text-align: center;
+    margin: 80px 0 30px;
+    color: #f4f0ec;
+    font-size: 2rem;
+}
+
+.erik{
+    display: block;
+    padding:0;
+    padding-top: 20px;
+}
+
+.me-img{
+    text-align: center;
+}
+
+.me-img img{
+    padding:0;
+    width:70%;
+}
+
+.me-text-jp{
+    font-size: 0.9rem;
+    padding-top: 20px;
+    line-height: 1.3rem;
+}
+
+.about{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:0;
+}
+
+.skills-img-web{
+    display: flex;
+    justify-content: center;
+    padding-top:10px;
+}
+
+.skills-item{
+    list-style: none;
+    border: 1px solid #353636;
+    border-radius: 15px;
+    width: 45%;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-item:nth-child(10){
+    display: block;
+    opacity: 0;
+}
+
+.skills-img img{
+    width: 120px;
+}
+
+
+}
+
+/*768px以下はこうなる*/
+@media screen and (max-width:768px){
+
+.erik{
+    display: block;
+}
+
+.page-title{
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #f4f0ec;
+    font-size: 1.5rem;
+}
+
+.about{
+    width: 100%;
+}
+
+.me-name{
+    font-size: 1.3rem;
+}
+
+.me-text-jp{
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.me-text-en{
+    font-size: 0.8rem;
+}
+
+.me-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.me-img img{
+    padding:0;
+}
+
+.page-title{
+    text-align: center;
+    padding-top: 50px;
+    color: #f4f0ec;
+}
+
+.skills-list{
+    flex-direction: column;
+    margin: 0;
+}
+
+.skills-name{
+    font-size: 1.2rem;
+}
+
+.skills-text{
+    padding: 0;
+    font-size: 0.9rem;
+    width: 95%;
+}
+
+.skills-item{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.pc-skills{
+    list-style: square;
+    list-style-position: inside;
+    width: 100%;
+}
+
+.skills-img img{
+    width: 25%;
+}
+
+.concept-wrapper{
+    width: 90%;
+}
+
+.concept-title{
+    text-align: center;
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.concept-title::after{
+    content: "";
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+.concept-title2{
+    text-align: center;
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.concept-title2::after{
+    content: "";
+    border-bottom: 1px solid black;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+.concept-text{
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.concept-inner{
+    margin: 10px 0
+}
+
+.interest-img{
+    text-align: center;
+}
+
+.interest-img img{
+    width: 90%;
+}
+
+.interest-list{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.interest-text-jp{
+    padding-top:5px;
+    
+}
+
+.interest-item{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.skills-item:nth-child(10){
+    display: none;
+}
+
+.my-concept,.my-skills,.my-interest{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px 0 30px; 
+}
+
+}

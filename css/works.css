@@ -1,0 +1,269 @@
+
+.br-sp{
+    display: none;
+}
+
+.br-sp2{
+    display: block;
+}
+
+/*works*/
+
+.wrapper{
+    background-color: #353636;
+}
+
+.works-wrapper{
+    background-color: #f4f0ec;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.works-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page-title{
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #f4f0ec;
+    font-size: 2rem;
+}
+
+.web-site-inner{
+    margin: 50px 0;
+    border: 1px solid #353636;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+
+.web-site-inner img{
+    width:  100%;
+    height: auto;   
+}
+
+.web-site-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.web-site-title::after{
+    content: "";
+    border-bottom: 2px solid #db438f;
+    display: block;
+    width: 20%;
+    margin: 5px auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.web-site-text{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 40px 20px 10px 30px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.web-site-concept{
+    font-size: 1rem;
+    text-align: left;
+    width: 80%;
+}
+
+.web-site-underarea{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 10px 10px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #fdf4f4;
+}
+
+.web-site-btn{
+    display: flex;
+}
+
+.view-detail-btn{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf4f4;
+    color: #db438f;
+    border: 2px solid #db438f;
+    text-align: center;
+    font-size: 0.7rem; 
+    font-weight: bold;
+    border-radius: 50%; 
+    border: 1px solid #db438f;
+    margin-top: 20px;
+}
+
+.view-detail-btn:hover{
+    transform: scale(1.1);
+}
+
+.view-site-btn{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #db438f;
+    border: 2px solid #fdf4f4;
+    text-align: center;
+    font-size: 0.7rem; 
+    font-weight: bold;
+    border-radius: 50%; 
+    border: 1px solid #db438f;
+    margin: 20px 0 0 10px;
+}
+
+.view-site-btn:hover{
+    transform: scale(1.1);
+}
+
+.reference{
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+/*1024px以下はこうなる*/
+@media screen and (max-width:1024px){
+
+    .web-site-text{
+        width: 95%;  
+    }
+
+    .web-site-inner{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .web-site-underarea{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .web-site-concept{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .web-site-btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .web-site-inner img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+}
+    
+/*768px以下はこうなる*/
+@media screen and (max-width:768px){
+
+.br-sp{
+    display: block;
+}
+
+.br-sp2{
+    display: none;
+}
+
+
+.page-title{
+    font-size: 1.5rem;
+}
+
+.works-wrapper{
+    background-color: #f4f0ec;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.works-inner{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.web-site-inner{
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.web-site-title{
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.web-site-text{
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.web-site-consept{
+    font-size: 1rem;
+    padding-top: 10px;
+    margin-top: 0;
+        
+    }
+
+    .web-site-consept,.web-site-detail-text{
+        text-align: left;
+    }
+
+    .web-site-detail-text p{
+        font-size: 1.3rem;
+    }
+
+    .view-detail-btn{
+        width: 55px;
+        height: 55px;
+        line-height: 15px;
+        font-size: 0.6rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .view-site-btn{
+        width: 55px;
+        height: 55px;
+        line-height: 15px;
+        font-size: 0.6rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

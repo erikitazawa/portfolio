@@ -1,0 +1,254 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    cursor: none; 
+    height:100vh;
+}
+
+#cursor{
+    position: fixed;
+    background: #db438f;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    z-index: 12;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#stalker{
+    position: fixed;
+    background: lightgray;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: -10px 0 0 -10px;
+    z-index: 11;
+    pointer-events: none;
+    opacity: 1;
+}
+
+/*header*/
+.site-logo{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.site-logo a{
+    font-size: 1rem;
+    color: #f4f0ec;
+    text-decoration: none;
+    
+}
+
+.header-nav{
+    background-color: #f4f0ec;
+    border: #30302f solid 1px;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.open.header-nav{
+    transform: translateX(0);
+}
+
+.nav-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+}
+
+.nav-item{
+    margin-bottom: 30px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-item a{
+    font-size: 1rem;
+    color: #353636;
+    text-decoration: none;
+}
+
+.toggle-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+span{
+    background-color: #db438f;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    transition: all 0.5s;
+
+}
+span:nth-child(1){
+    top: 4px;
+}
+span:nth-child(2){
+    top: 14px;
+}
+span:nth-child(3){
+    bottom: 4px;
+}
+
+.open span:nth-child(1){
+    transform: translateY(10px) rotate(315deg);
+}
+.open span:nth-child(2){
+    opacity: 0;
+}
+.open span:nth-child(3){
+    transform: translateY(-10px) rotate(-315deg);
+}
+/*header*/
+
+/*footer*/
+.footer-wrapper{
+    background-color: #353636;
+}
+
+.footer-text{
+    color: #fdf4f4;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+/*footer*/
+
+/*indexのみ記載*/
+
+.contact-title{
+    color: #fdf4f4;
+    font-size: 1.5rem;
+    padding: 50px 0 30px 80px;
+}
+
+.contact-link{
+    font-size: 3rem;
+    padding: 0 0 50px 80px;
+}
+
+.contact-link a{
+    color: #353636;
+    text-shadow: 1px 1px 0 #fdf4f4, -1px 1px 0 #fdf4f4, 1px -1px 0 #fdf4f4,-1px -1px 0 #fdf4f4;
+    letter-spacing: 0.1rem;
+}
+
+.contact-link a:hover{
+    color: #fdf4f4;
+    text-shadow: 0;
+}
+/*indexのみ記載*/
+
+/*pagetop*/
+.pagetop{
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    padding: 10px;
+    text-align: right;
+}
+
+.pagetop img{
+    width: 70px;
+    transition: all ease .5s;
+}
+
+.pagetop img:hover{
+    transform: scale(1.1);
+}
+
+/*1024px以下はこうなる*/
+@media screen and (max-width:1024px){
+
+#cursor{
+    display: none;
+}
+
+#stalker{
+    display: none;
+}
+
+/*768px以下はこうなる*/
+@media screen and (max-width:768px){
+
+    display: none;
+
+
+/*indexのみ記載*/
+.contact-title{
+    font-size: 1rem;
+    padding: 30px 0 20px 30px;
+}
+        
+.contact-link{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0;
+}
+        
+.contact-link a{
+    color: #353636;
+    text-shadow: 0.5px 0.5px 0 #fdf4f4, -0.5px 0.5px 0 #fdf4f4, 0.5px -0.5px 0 #fdf4f4,-0.5px -0.5px 0 #fdf4f4;
+    letter-spacing: 0.1rem;
+}
+        
+.contact-link a:hover{
+    color: #fdf4f4;
+    text-shadow: 0;
+}
+/*indexのみ記載*/
+        
+/*pagetop*/
+    .pagetop{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    text-align: right;
+}
+    
+.pagetop img{
+    width: 40px;
+    transition: all ease .5s;
+}
+    
+.pagetop img:hover{
+    transform: scale(1.1);
+}
+/*pagetop*/
+    
+}
+    
+}

@@ -1,0 +1,120 @@
+
+
+/*main*/
+
+.wrapper{
+    background-color: #353636;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.page-title{
+    text-align: center;
+    margin: 50px 0 30px;
+    color: #f4f0ec;
+    font-size: 2rem;
+}
+
+.contact-wrapper{
+    background-color: #f4f0ec;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-text{
+    padding: 80px 0 50px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-text-jp{
+    padding-bottom: 10px;
+}
+
+.mail-to{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.mail-to a{
+    color: black; 
+    background-color: #353636;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.mail-to a:hover{
+    color: #db438f; 
+    font-weight: bold;
+    background-color: #f4f0ec;
+    border: 2px solid #db438f;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+.sma{
+    display: none;
+}
+
+/*1024px以下はこうなる*/
+@media screen and (max-width:1024px){
+  
+.contact-wrapper{
+    background-color: #f4f0ec;
+    height: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-text{
+    padding-top: 100px;
+}
+
+.contact-text-jp{
+    padding-bottom: 20px;
+}
+.sma{
+    display: block;
+}
+
+
+}
+
+/*768px以下はこうなる*/
+@media screen and (max-width:768px){
+    
+.contact-wrapper{
+    background-color: #f4f0ec;
+    height: 400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.page-title{
+    font-size: 1.5rem;
+}
+
+.contact-text{
+    font-size: 1rem;
+}
+
+.mail-to a{
+    color: black; 
+    background-color: #353636;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 10px;
+    color: #f4f0ec;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+}
+
